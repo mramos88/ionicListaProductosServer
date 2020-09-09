@@ -86,6 +86,16 @@ app.get("/productos",function(req,res){
    
     
 });
+app.get("/loquesea",function(req,res){
+
+	 res.send("respuesta");    
+
+
+   
+   
+   
+    
+});
 
 app.get("/productos/:id",function(req,res){
   console.log(req.params.id);
@@ -163,7 +173,7 @@ app.put("/productos/:id",function(req,res){
         
        console.log(req.body);
 
-        if((req.body.name!= undefined&&req.body.nombre!= "") &&(req.body.imagen!= undefined&&req.body.imagen!= "") 
+        if((req.body.nombre!= undefined&&req.body.nombre!= "") &&(req.body.imagen!= undefined&&req.body.imagen!= "") 
 			&&  (req.body.precio!= undefined) && (req.body.cantidad!= undefined)){
 	
 			
